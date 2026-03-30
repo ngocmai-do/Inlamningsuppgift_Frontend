@@ -1,44 +1,62 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
+    <title>Webshop</title>
+  </head>
 
-  <title>Webshop</title>
-</head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-sm custom-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">OUR WEBSHOP</a>
 
-<body>
-  <div>
-    <nav class="navbar navbar-expand-sm custom-navbar fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">OUR WEBSHOP</a>
-
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product-page.html">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">About</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item active" href="product-page.html"
+                      >Products</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">idk yet</a></li>
+                  <li><a class="dropdown-item" href="#">idk yet</a></li>
+                  <li><a class="dropdown-item" href="#">idk yet</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </div>
 
-      </div>
-    </nav>
-  </div>
-
-<section id="best-sellers" class="container p-5">
-  <h2 id="best-sellers-headline" class="text-center">BEST SELLERS</h2>
-  <br>
+    <section id="best-sellers" class="container p-5">
+      <h2 id="Page-headline" class="text-center">BEST SELLERS</h2>
+      <br />
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gy-4">
         <div class="col">
           <div class="card h-100">
@@ -117,7 +135,6 @@
         </div>
       </div>
     </section>
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
