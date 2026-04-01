@@ -98,3 +98,13 @@ body {
   background-color: #ffd59e;
   color: #5a3e2b;
 }
+
+.my-btn {
+  background-color: #6fa086;
+  color: white;
+  border: none;
+}
+
+.my-btn:hover {
+  background-color: #5e8c73;
+}
