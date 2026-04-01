@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webshop</title>
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
+      <div>hej</div>
       <div>
         <nav class="navbar navbar-expand-sm custom-navbar fixed-top">
           <div class="container-fluid">
@@ -59,37 +59,84 @@
     <section id="Products" class="container p-5">
       <h2 id="Page-headline" class="text-center">Products</h2>
       <br />
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gy-4"
-        id="product-grid"
-      ></div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gy-4">
+        <div class="col">
+          <div class="card h-100">
+            <div
+              class="card-img-top bg-light d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="images/Screenshot 2025-10-13 at 00-03-52 Which cartoon character fits this r_cartoons.png"
+                alt="test bild"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">hm indeed</h5>
+              <p class="card-text text-muted small">hmmmmmmmmm</p>
+              <span>€2.50</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div
+              class="card-img-top bg-light d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="images/Screenshot 2025-10-13 at 00-03-52 Which cartoon character fits this r_cartoons.png"
+                alt="test bild"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hm indeed</h5>
+              <p class="card-text text-muted small">hmmmmmmmm</p>
+              <span>€2.50</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div
+              class="card-img-top bg-light d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="images/Screenshot 2025-10-13 at 00-03-52 Which cartoon character fits this r_cartoons.png"
+                alt="test bild"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hm indeed</h5>
+              <p class="card-text text-muted small">hmmmmmmmm</p>
+              <span>€2.50</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col p2">
+          <div class="card h-100">
+            <div
+              class="card-img-top bg-light d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="images/Screenshot 2025-10-13 at 00-03-52 Which cartoon character fits this r_cartoons.png"
+                alt="test bild"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hm indeed</h5>
+              <p class="card-text text-muted small">hmmmmmmmm</p>
+              <span>€2.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      fetch("https://dummyjson.com/products")
-        .then((response) => response.json())
-        .then((data) => {
-          const grid = document.getElementById("product-grid");
-
-          data.products.forEach((product) => {
-            grid.innerHTML += `
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="${product.thumbnail}"
-                alt="${product.title}"
-                style="width: 100%; height: 150px; object-fit: contain;"
-                class="card-img-top p-2"
-              />
-              <div class="card-body">
-                <h5 class="card-title">${product.title}</h5>
-                <p class="card-text text-muted small">${product.description}</p>
-                <span>€${product.price}</span>
-              </div>
-            </div>
-          </div>`;
-          });
-        });
-    </script>
   </body>
 </html>
