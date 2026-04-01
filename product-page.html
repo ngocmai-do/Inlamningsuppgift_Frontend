@@ -12,7 +12,6 @@
   </head>
   <body>
     <header>
-      <div>hej</div>
       <div>
         <nav class="navbar navbar-expand-sm custom-navbar fixed-top">
           <div class="container-fluid">
@@ -77,6 +76,7 @@
       data.products.forEach(product => {
         grid.innerHTML += `
           <div class="col">
+            <a href="product.html?id=${product.id}" style="text-decoration:none; color:inherit;">
             <div class="card h-100">
               <img
                 src="${product.thumbnail}"
@@ -90,6 +90,7 @@
                 <span>€${product.price}</span>
               </div>
             </div>
+            </a>
           </div>`;
       });
     });
