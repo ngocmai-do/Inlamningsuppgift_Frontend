@@ -33,7 +33,6 @@
                     Products
                   </a>
                   <ul class="dropdown-menu">
-                    <li>
                   <li>
                     <a class="dropdown-item active" href="product-page.html"
                       >All Products</a
@@ -59,7 +58,7 @@
     </header>
 
     <section id="Products" class="container p-5">
-      <h2 id="Page-headline" class="text-center">All Products</h2>
+      <h2 id="Page-headline" class="text-center">Furniture</h2>
       <br />
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gy-4" id="product-grid">
 
@@ -75,10 +74,11 @@
       const grid = document.getElementById('product-grid');
 
       data.products.forEach(product => {
+        if(product.category === 'furniture') {
         grid.innerHTML += `
           <div class="col">
             <div class="card h-100">
-              <img
+                <img
                 src="${product.thumbnail}"
                 alt="${product.title}"
                 style="width: 100%; height: 150px; object-fit: contain;"
@@ -89,8 +89,10 @@
                 <p class="card-text text-muted small">${product.description}</p>
                 <span>€${product.price}</span>
               </div>
+              
             </div>
           </div>`;
+        }
       });
     });
 </script>
