@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <div class="container p-5">
+    <div id="Products" class="container p-5">
       <div class="row align-items-center">
        
         <div class="col-md-6">
@@ -43,6 +43,22 @@
           document.getElementById("product-image").src = product.thumbnail;
 
         });
+
+        /*
+    fetch('products.json')
+    .then(res => res.json())
+    .then(data => {
+
+      data.products.forEach(product => {
+        if(product.id == productId) {
+          document.getElementById("product-title").innerText = product.title;
+          document.getElementById("product-description").innerText = product.description;
+          document.getElementById("product-price").innerText = `€${product.price}`;
+          document.getElementById("product-image").src = product.thumbnail;
+        }
+      });
+    });
+    */
     </script>
   </body>
 </html>
