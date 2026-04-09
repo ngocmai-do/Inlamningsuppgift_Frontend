@@ -83,7 +83,7 @@
       }
 
       if (!/^[0-9\-\(\)\s]+$/.test(phone.value) || phone.value.length > 20) {
-        showError(phone, "Phone can contain numbers, -, (), max 20 chars");
+        showError(phone, "Write a valid phone number (max 20 digits)");
         valid = false;
       }
 
